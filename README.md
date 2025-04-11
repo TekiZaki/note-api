@@ -2,7 +2,7 @@
 
 ## 📝 Deskripsi
 
-API Catatan adalah sistem pengelolaan catatan sederhana yang menyimpan data dalam format JSON. API ini memungkinkan pengguna untuk membuat, membaca, memperbarui, dan menghapus catatan (CRUD operations).
+API Catatan ini adalah sistem pengelolaan catatan sederhana yang menyimpan data dalam format JSON. API ini memungkinkan pengguna untuk membuat, membaca, memperbarui, dan menghapus catatan (CRUD operations).
 
 ### 🛠 Teknologi yang Digunakan
 
