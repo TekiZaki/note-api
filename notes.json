@@ -5,5 +5,12 @@
     "isi": "## 📄 Panduan Penggunaan API\n\nSelamat datang di Panduan Aplikasi Catatan. Ini adalah panduan singkat tentang cara menggunakan aplikasi ini.\n\n### 1. Mendapatkan Semua Catatan:\n\n```\nGET http://localhost:6969/notes\n```\n\n- **Response**: Array berisi semua catatan.\n- **Status Kode**: 200 (OK), 500 (Error Server).\n\nAtau mendapatkan catatan berdasarkan ID tertentu:\n\n```\nGET http://localhost:6969/notes/:id\n```\n\n- **Parameter**: `id` - ID catatan yang ingin diambil, contohnya `1`.\n- **Response**: Objek catatan atau pesan error.\n- **Status Kode**: 200 (OK), 404 (Tidak Ditemukan), 500 (Error Server).\n\n### 2. Membuat Catatan Baru:\n\n```\nPOST http://localhost:6969/notes\n```\n\n- **Body (raw JSON)**:\n\n  ```json\n  {\n    \"judul\": \"Catatan Pertama\",\n    \"isi\": \"Ini adalah isi dari catatan pertama saya.\"\n  }\n  ```\n\n- **Catatan**: Salah satu dari `judul` atau `isi` wajib diisi.\n- **Response**: Objek catatan baru yang dibuat.\n- **Status Kode**: 201 (Dibuat), 400 (Bad Request), 500 (Error Server).\n\n### 3. Memperbarui Catatan:\n\n```\nPUT http://localhost:6969/notes/:id\n```\n\n- **Body (raw JSON)**:\n\n  ```json\n  {\n    \"judul\": \"Catatan Pertama (Updated)\",\n    \"isi\": \"Isinya sudah diperbarui.\"\n  }\n  ```\n\n### 4. Menghapus Catatan:\n\n```\nDELETE http://localhost:6969/notes/:id\n```",
     "tanggal": "2025-04-09T22:35:08.773Z",
     "tanggalDiubah": "2025-04-10T00:44:58.427Z"
+  },
+  {
+    "id": 1,
+    "judul": "Catatan Pertama Edit dari WEB Interface",
+    "isi": "Ini adalah isi dari catatan pertama saya yang saya edit dari WEB Interface.",
+    "tanggal": "2025-04-11T00:59:49.639Z",
+    "tanggalDiubah": "2025-04-11T01:00:57.008Z"
   }
 ]
